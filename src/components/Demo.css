@@ -1,0 +1,116 @@
+.demo {
+  margin: 0 auto;
+  padding: 6rem;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.demo .container {
+  width: 1240px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.demo .col-1 {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.demo .col-1 p:nth-child(1) {
+  padding-top: 1rem;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  font-style: italic;
+}
+
+.demo .col-1 p:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.demo .col-1 p:nth-child(3) {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.demo .col-2 {
+  margin: auto;
+}
+
+.demo button {
+  border-radius: 50px;
+  background: var(--secondary-color);
+  border: var(--secondary-dark);
+  white-space: nowrap;
+  margin-top: 2rem;
+  padding: 14px 48px;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 0.3));
+}
+
+.demo button:hover {
+  transition: all 0.2s ease-in-out;
+  background: var(--secondary-dark);
+  border: var(--secondary-dark);
+}
+
+@media screen and (max-width: 940px) {
+  .demo {
+    padding: 3rem;
+  }
+
+  .demo .container {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .demo .col-1 p:nth-child(1) {
+    padding-top: 1rem;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .demo .col-1 p:nth-child(2) {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
+
+  .demo .col-1 p:nth-child(3) {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .demo iframe {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 0.3));
+  }
+
+  .demo button {
+    padding: 9px 25px;
+    font-size: 18px;
+  }
+}

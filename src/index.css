@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #5bb462;
+  --primary-dark: #4f9c55;
+  --secondary-color: #ffea00;
+  --secondary-dark: #e3d002;
+  --overlay: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.underline {
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: var(--secondary-color);
+}
