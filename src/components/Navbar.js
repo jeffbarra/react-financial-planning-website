@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { Twirl as Hamburger } from "hamburger-react";
 import logo from "../images/logo.png";
 import "./Navbar.css";
 
@@ -16,11 +16,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </a>
         <div className="hamburger" onClick={handleClick}>
-          {click ? (
-            <FaTimes size={30} style={{ color: "#ffea00" }} />
-          ) : (
-            <FaBars size={30} style={{ color: "#ffffff" }} />
-          )}
+          <Hamburger />
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
